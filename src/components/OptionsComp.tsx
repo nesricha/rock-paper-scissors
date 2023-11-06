@@ -41,6 +41,9 @@ export default function OptionsComp() {
             choice && setPlay(clicked => !clicked)
         }} className={`font-bold text-3xl text-white ${play ? `bg-blue-500 hover:bg-blue-600` : `bg-green-500 hover:bg-green-600`} py-3 px-8`}>{!play ? `PLAY` : `RESTART`}</button>
 
-        {play && choice ? <ResultComp yourChoice={`${choice}`} /> : <p className="py-5">(You must select an option in order to play)</p>}
+        {play && choice ? <>
+        <p className="py-5">Press "RESTART" to play again</p>
+        <ResultComp yourChoice={`${choice}`} />
+        </> : <p className="py-5">(You must select an option in order to play)</p>}
     </div>)
 }
