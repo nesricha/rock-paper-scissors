@@ -11,7 +11,7 @@ export default function OptionsComp() {
         !play && setChoice(option)
     }
 
-    return (<div className="flex flex-col items-center justify-evenly py-10">
+    return (<div className="flex flex-col items-center justify-evenly py-2">
         <div className="flex flex-wrap justify-evenly md:w-9/12 mx-auto my-5 p-3">
             <a href={play ? undefined : "#"} id="rock" onClick={event => {
                 event.preventDefault()

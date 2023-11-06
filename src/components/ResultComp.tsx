@@ -25,7 +25,7 @@ export default function ResultComp(prop: Props) {
     }, [])
 
 
-    return (<div className="flex flex-col items-center py-10 mx-auto">
+    return (<div className="flex flex-col items-center py-8 px-3 mx-auto text-center">
         <p className="font-semibold text-3xl py-5">{calcRes(prop.yourChoice, compChoice)}</p>
         <div className="flex justify-evenly md:w-9/12 mx-auto my-5 p-3">
             <div className={`flex flex-col items-center`}>
