@@ -22,7 +22,7 @@ export default function ResultComp(prop: Props) {
     useEffect(() => {
         let randomIndex = Math.floor(Math.random() * choices.length)
         setCompChoice(choices[randomIndex])
-    }, [])
+    }, [prop.yourChoice])
 
 
     return (<div className="flex flex-col items-center py-8 px-3 mx-auto text-center">
