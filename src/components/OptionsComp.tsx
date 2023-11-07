@@ -38,6 +38,6 @@ export default function OptionsComp() {
         {play && choice ? <>
             <ResultComp yourChoice={`${choice}`} options={options} />
             <p className="py-5">Press "RESTART" to play again</p>
-        </> : <p className="py-5">(You must select an option in order to play)</p>}
+        </> : <p className="py-5">{!choice && `(You must select an option in order to play)`}</p>}
     </div>)
 }
