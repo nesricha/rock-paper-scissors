@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "add": "git add .",
+    "push": "git push -u origin main"
   },
   "dependencies": {
     "next": "14.0.1",
