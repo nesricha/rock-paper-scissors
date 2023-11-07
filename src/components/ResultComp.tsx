@@ -30,13 +30,13 @@ export default function ResultComp(prop: Props) {
         <div className="flex justify-evenly md:w-9/12 mx-auto my-5 p-3">
             <div className={`flex flex-col items-center`}>
                 <p className="font-semibold text-xl py-5"> YOU </p>
-                <div className="w-5/12 p-2 min-w-[100px] border border-yellow-200 overflow-hidden ">
+                <div className="w-5/12 p-2 min-w-[100px] border border-yellow-300 shadow-md overflow-hidden ">
                     <img src={`/${prop.yourChoice}.png`} alt={prop.yourChoice} />
                 </div>
             </div>
             <div className={`flex flex-col items-center`}>
                 <p className="font-semibold text-xl py-5"> COMPUTER </p>
-                <div className="w-5/12 p-2 min-w-[100px] border border-yellow-200  overflow-hidden ">
+                <div className="w-5/12 p-2 min-w-[100px] border border-yellow-300 shadow-md  overflow-hidden ">
                     <img src={`/${compChoice}.png`} alt={compChoice} />
                 </div></div>
         </div>

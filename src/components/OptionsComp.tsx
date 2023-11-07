@@ -21,7 +21,7 @@ export default function OptionsComp() {
                     e.preventDefault()
                     handleClick(e.currentTarget.id)
                 }}
-                className={`w-3/12 p-2 min-w-[100px] border border-yellow-200 overflow-hidden ${!play && `hover:bg-yellow-400 hover:shadow-lg`} focus:bg-yellow-400 focus:scale-105 focus:shadow-2xl`}>
+                className={`w-3/12 p-2 min-w-[100px] border border-yellow-300 shadow-md overflow-hidden ${!play && `hover:bg-yellow-400 hover:shadow-lg`} focus:bg-yellow-400 focus:scale-105 focus:shadow-2xl`}>
                 <img src={`/${opt}.png`} alt={`${opt}`} />
             </a>)}
 
