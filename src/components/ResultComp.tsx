@@ -29,13 +29,13 @@ export default function ResultComp(prop: Props) {
         <p className="font-semibold text-3xl py-5">{calcRes(prop.yourChoice, compChoice)}</p>
         <div className="flex justify-evenly md:w-9/12 mx-auto my-5 p-3">
             <div className={`flex flex-col items-center`}>
-                <p className="font-semibold text-xl py-5"> You </p>
+                <p className="font-semibold text-xl py-5"> YOU </p>
                 <div className="w-5/12 p-2 min-w-[100px] overflow-hidden ">
                     <img src={`/${prop.yourChoice}.png`} alt={prop.yourChoice} />
                 </div>
             </div>
             <div className={`flex flex-col items-center`}>
-                <p className="font-semibold text-xl py-5"> Computer </p>
+                <p className="font-semibold text-xl py-5"> COMPUTER </p>
                 <div className="w-5/12 p-2 min-w-[100px] overflow-hidden ">
                     <img src={`/${compChoice}.png`} alt={compChoice} />
                 </div></div>
