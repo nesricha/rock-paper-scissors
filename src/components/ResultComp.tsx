@@ -1,18 +1,18 @@
 import { useEffect, useState } from "react"
 
 type Props = {
-    yourChoice: string
+    yourChoice: string,
+    options: string[]
 }
 
 export default function ResultComp(prop: Props) {
-    const choices = ["rock", "paper", "scissors"]
     const [compChoice, setCompChoice] = useState<string>("")
 
     const calcRes = (opt1: string, opt2: string) => {
-        const winCase = (opt1 === 'rock' && opt2 === 'scissors') || (opt1 === 'paper' && opt2 === 'rock') || (opt1 === 'scissors' && opt2 === 'paper')
+        const winCase = (opt1 === prop.options[0] && opt2 === prop.options[2]) || (opt1 === prop.options[1] && opt2 === prop.options[0]) || (opt1 === prop.options[2] && opt2 === prop.options[1])
         if (opt1 === opt2) {
             return "It's a tie!"
-        } else if (winCase){
+        } else if (winCase) {
             return 'Congratulations! You won!'
         } else {
             return 'You lost... Better luck next time.'
@@ -20,8 +20,8 @@ export default function ResultComp(prop: Props) {
     }
 
     useEffect(() => {
-        let randomIndex = Math.floor(Math.random() * choices.length)
-        setCompChoice(choices[randomIndex])
+        let randomIndex = Math.floor(Math.random() * prop.options.length)
+        setCompChoice(prop.options[randomIndex])
     }, [prop.yourChoice])
 
 
